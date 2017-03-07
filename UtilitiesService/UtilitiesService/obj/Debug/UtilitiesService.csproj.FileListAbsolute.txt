@@ -1,0 +1,15 @@
+C:\Users\Ola\Desktop\Nadav\UtilitiesService\bin\UtilitiesService.dll.config
+C:\Users\Ola\Desktop\Nadav\UtilitiesService\bin\UtilitiesService.dll
+C:\Users\Ola\Desktop\Nadav\UtilitiesService\bin\UtilitiesService.pdb
+C:\Users\Ola\Desktop\Nadav\UtilitiesService\obj\Debug\UtilitiesService.csprojResolveAssemblyReference.cache
+C:\Users\Ola\Desktop\Nadav\UtilitiesService\obj\Debug\UtilitiesService.dll
+C:\Users\Ola\Desktop\Nadav\UtilitiesService\obj\Debug\UtilitiesService.pdb
+C:\Users\Ola\Desktop\Nadav\UtilitiesService\bin\MathNet.Numerics.dll
+C:\Users\Ola\Desktop\Nadav\UtilitiesService\bin\MathNet.Numerics.xml
+C:\Users\Ola\Desktop\Nadav\UtilitiesService\UtilitiesService\UtilitiesService\bin\UtilitiesService.dll.config
+C:\Users\Ola\Desktop\Nadav\UtilitiesService\UtilitiesService\UtilitiesService\bin\UtilitiesService.dll
+C:\Users\Ola\Desktop\Nadav\UtilitiesService\UtilitiesService\UtilitiesService\bin\UtilitiesService.pdb
+C:\Users\Ola\Desktop\Nadav\UtilitiesService\UtilitiesService\UtilitiesService\bin\MathNet.Numerics.xml
+C:\Users\Ola\Desktop\Nadav\UtilitiesService\UtilitiesService\UtilitiesService\obj\Debug\UtilitiesService.csprojResolveAssemblyReference.cache
+C:\Users\Ola\Desktop\Nadav\UtilitiesService\UtilitiesService\UtilitiesService\obj\Debug\UtilitiesService.dll
+C:\Users\Ola\Desktop\Nadav\UtilitiesService\UtilitiesService\UtilitiesService\obj\Debug\UtilitiesService.pdb
