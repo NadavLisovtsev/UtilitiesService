@@ -71,9 +71,6 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AsymptoticAverage\AsymptoticAverage.cs" />
-    <Compile Include="AsymptoticAverage\BetaCumulativeDistPreCalc.cs" />
-    <Compile Include="AsymptoticAverage\IFloatPreCalc.cs" />
     <Compile Include="Service1.svc.cs">
       <DependentUpon>Service1.svc</DependentUpon>
     </Compile>
@@ -92,6 +89,12 @@
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AsymptoticAverage\AsymptoticAverage.csproj">
+      <Project>{147f75b2-bd86-4db9-be9b-61d4b1e954c9}</Project>
+      <Name>AsymptoticAverage</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

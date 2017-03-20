@@ -14,3 +14,9 @@ C:\Users\Ola\Desktop\Nadav\UtilitiesService\UtilitiesService\ConsoleApplication1
 C:\Users\Ola\Desktop\Nadav\UtilitiesService\UtilitiesService\ConsoleApplication1\obj\Debug\ConsoleApplication1.csprojResolveAssemblyReference.cache
 C:\Users\Ola\Desktop\Nadav\UtilitiesService\UtilitiesService\ConsoleApplication1\obj\Debug\ConsoleApplication1.exe
 C:\Users\Ola\Desktop\Nadav\UtilitiesService\UtilitiesService\ConsoleApplication1\obj\Debug\ConsoleApplication1.pdb
+C:\Users\Ola\Desktop\Nadav\UtilitiesService\UtilitiesService\ConsoleApplication1\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Ola\Desktop\Nadav\UtilitiesService\UtilitiesService\ConsoleApplication1\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Ola\Desktop\Nadav\UtilitiesService\UtilitiesService\ConsoleApplication1\bin\Debug\AsymptoticAverage.dll
+C:\Users\Ola\Desktop\Nadav\UtilitiesService\UtilitiesService\ConsoleApplication1\bin\Debug\MathNet.Numerics.dll
+C:\Users\Ola\Desktop\Nadav\UtilitiesService\UtilitiesService\ConsoleApplication1\bin\Debug\AsymptoticAverage.pdb
+C:\Users\Ola\Desktop\Nadav\UtilitiesService\UtilitiesService\ConsoleApplication1\bin\Debug\MathNet.Numerics.xml

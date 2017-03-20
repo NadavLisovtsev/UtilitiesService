@@ -5,7 +5,7 @@ using System.Runtime.Serialization;
 using System.ServiceModel;
 using System.ServiceModel.Web;
 using System.Text;
-using UtilitiesService.AssymptoticAgent;
+using AsymptoticAverage;
 
 namespace UtilitiesService
 {
@@ -13,13 +13,13 @@ namespace UtilitiesService
     {
         public double CalcAsymptoticAverage(double[] values)
         {
-            AsymptoticAverage avg = new AsymptoticAverage();
+            AsymptoticAverageClass avg = new AsymptoticAverageClass();
             return avg.calcAverage(values.ToList());
         }
 
         public double AddValueToAsymptoticAverage(double value, double average)
         {
-            AsymptoticAverage avg = new AsymptoticAverage();
+            AsymptoticAverageClass avg = new AsymptoticAverageClass();
             return avg.addValueToAverage(value, average);
         }
     }

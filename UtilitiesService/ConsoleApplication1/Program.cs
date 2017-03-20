@@ -1,10 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using ZeroMQ;
+using System.Web.Script.Serialization;
+using AsymptoticAverage;
+
+
 
 namespace ConsoleApplication1
 {
@@ -40,9 +45,7 @@ namespace ConsoleApplication1
             using (var context = new ZContext())
             using (var responder = new ZSocket(context, ZSocketType.REP))
             {
-                ZError error = null;
                 // Bind
-  //              responder.Bind("tcp://*:5555", out error);
                 responder.Bind("tcp://*:5555");
 
                 while (true)
@@ -50,16 +53,61 @@ namespace ConsoleApplication1
                     // Receive
                     using (ZFrame request = responder.ReceiveFrame())
                     {
-                        Console.WriteLine("Received {0}", request.ReadString());
+                        string requestData =  request.ReadString();
+                        Console.WriteLine("Received {0}", requestData);
 
-                        // Do some work
-                        Thread.Sleep(1);
+                        Tuple<string, object> methodAndData = extractMethodAndData(requestData);
+
+                        double result = HandleMethod(methodAndData.Item1, methodAndData.Item2);
 
                         // Send
-                        responder.Send(new ZFrame(name));
+                        Console.WriteLine("Send {0}", result.ToString());
+                        responder.Send(new ZFrame(result.ToString()));
                     }
                 }
             }
         }
+
+        private static Tuple<string, object> extractMethodAndData(string strRequestData)
+        {
+            var serializer = new JavaScriptSerializer();
+            RequestData requestData = serializer.Deserialize<RequestData>(strRequestData);
+            return new Tuple<string, object>(requestData.Method, requestData.Data);
+        }
+
+        private static double HandleMethod(string methodName, object data)
+        {
+            var method = typeof(Program).GetMethod(methodName, BindingFlags.Static | BindingFlags.NonPublic);
+            return (double)method.Invoke(null, new object[]{data} );
+        }
+
+        private static double CalcAsymptoticAverage(object objData)
+        {
+            List<double> data = ObjToDoubleArray(objData);
+
+            AsymptoticAverageClass avg = new AsymptoticAverageClass(); 
+            return avg.calcAverage(data);
+        }
+
+        private static double AddValueToAsymptoticAverage(object objData)
+        {     
+            List<double> data = ObjToDoubleArray(objData);
+            double val = data[0];
+            double average = data[1];
+
+            AsymptoticAverageClass avg = new AsymptoticAverageClass();
+            return avg.addValueToAverage(val, average);
+        }
+
+        private static List<double> ObjToDoubleArray(object objData)
+        {
+            List<double> data = new List<double>();
+            foreach (object obj in (object[])objData)
+            {
+                data.Add(Double.Parse(obj.ToString()));
+            }
+            return data;
+        }
+
     }
 }

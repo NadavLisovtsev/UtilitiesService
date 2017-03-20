@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using ZeroMQ;
+using System.Web.Script.Serialization;
 
 namespace ZeroMQTester
 {
@@ -45,16 +46,29 @@ namespace ZeroMQTester
 
                 for (int n = 0; n < 10; ++n)
                 {
-                    string requestText = "Hello";
-                    Console.Write("Sending {0}…", requestText);
+                    string methodName = "AddValueToAsymptoticAverage";
 
-                    // Send
-                    requester.Send(new ZFrame(requestText));
+                    double[] data = {0.3, 0.2};
+                    //string strData = data.ToString();               
+                    
+                    RequestData requestData = new RequestData();
+                    requestData.Method = methodName;
+                    requestData.Data = data;
+                    var serializer = new JavaScriptSerializer();
+                    string requestJson = serializer.Serialize(requestData);
 
-                    // Receive
+                    Console.Write("Sending To Method: {0}… data: {1} $$$ ", methodName, data);
+
+                    // Send Data
+                    requester.Send(new ZFrame(requestJson));
+
+                    // Receive Result
                     using (ZFrame reply = requester.ReceiveFrame())
                     {
-                        Console.WriteLine(" Received: {0} {1}!", requestText, reply.ReadString());
+                        string strResult = reply.ReadString();
+                        Double Mresult = serializer.Deserialize<Double>(strResult);
+                        double doubleResult = Double.Parse(strResult);
+                        Console.WriteLine(" Received, Method: {0}, sendData: {1}, resultData: {2}!", methodName, data.ToString(), doubleResult);
                     }
                 }
             }

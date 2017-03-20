@@ -13,3 +13,15 @@ C:\Users\Ola\Desktop\Nadav\UtilitiesService\UtilitiesService\UtilitiesService\bi
 C:\Users\Ola\Desktop\Nadav\UtilitiesService\UtilitiesService\UtilitiesService\obj\Debug\UtilitiesService.csprojResolveAssemblyReference.cache
 C:\Users\Ola\Desktop\Nadav\UtilitiesService\UtilitiesService\UtilitiesService\obj\Debug\UtilitiesService.dll
 C:\Users\Ola\Desktop\Nadav\UtilitiesService\UtilitiesService\UtilitiesService\obj\Debug\UtilitiesService.pdb
+C:\Users\Ola\Desktop\Nadav\UtilitiesService\UtilitiesService\UtilitiesService\bin\amd64\libzmq.so
+C:\Users\Ola\Desktop\Nadav\UtilitiesService\UtilitiesService\UtilitiesService\bin\amd64\libzmq.dll
+C:\Users\Ola\Desktop\Nadav\UtilitiesService\UtilitiesService\UtilitiesService\bin\amd64\libsodium.so
+C:\Users\Ola\Desktop\Nadav\UtilitiesService\UtilitiesService\UtilitiesService\bin\amd64\libsodium.dll
+C:\Users\Ola\Desktop\Nadav\UtilitiesService\UtilitiesService\UtilitiesService\bin\i386\libzmq.so
+C:\Users\Ola\Desktop\Nadav\UtilitiesService\UtilitiesService\UtilitiesService\bin\i386\libzmq.dll
+C:\Users\Ola\Desktop\Nadav\UtilitiesService\UtilitiesService\UtilitiesService\bin\i386\libsodium.so
+C:\Users\Ola\Desktop\Nadav\UtilitiesService\UtilitiesService\UtilitiesService\bin\i386\libsodium.dll
+C:\Users\Ola\Desktop\Nadav\UtilitiesService\UtilitiesService\UtilitiesService\bin\AsymptoticAverage.dll
+C:\Users\Ola\Desktop\Nadav\UtilitiesService\UtilitiesService\UtilitiesService\bin\ZeroMQ.dll
+C:\Users\Ola\Desktop\Nadav\UtilitiesService\UtilitiesService\UtilitiesService\bin\AsymptoticAverage.pdb
+C:\Users\Ola\Desktop\Nadav\UtilitiesService\UtilitiesService\UtilitiesService\bin\ZeroMQ.xml

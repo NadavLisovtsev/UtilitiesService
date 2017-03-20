@@ -1,0 +1,6 @@
+C:\Users\Ola\Desktop\Nadav\UtilitiesService\UtilitiesService\AsymptoticAverage\bin\Debug\AsymptoticAverage.dll
+C:\Users\Ola\Desktop\Nadav\UtilitiesService\UtilitiesService\AsymptoticAverage\bin\Debug\AsymptoticAverage.pdb
+C:\Users\Ola\Desktop\Nadav\UtilitiesService\UtilitiesService\AsymptoticAverage\bin\Debug\MathNet.Numerics.dll
+C:\Users\Ola\Desktop\Nadav\UtilitiesService\UtilitiesService\AsymptoticAverage\bin\Debug\MathNet.Numerics.xml
+C:\Users\Ola\Desktop\Nadav\UtilitiesService\UtilitiesService\AsymptoticAverage\obj\Debug\AsymptoticAverage.dll
+C:\Users\Ola\Desktop\Nadav\UtilitiesService\UtilitiesService\AsymptoticAverage\obj\Debug\AsymptoticAverage.pdb
